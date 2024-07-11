@@ -1,0 +1,114 @@
+import { useEffect, useState } from "react";
+import { invoke } from "@tauri-apps/api/tauri";
+import "./App.css";
+import "./index.css"
+import { FaRegPlusSquare } from "react-icons/fa";
+
+import { Button } from "@/components/ui/button"
+import {
+  Dialog,
+  DialogClose,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog"
+import { Input } from "@/components/ui/input"
+import { Label } from "@/components/ui/label"
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+
+import { createDir, BaseDirectory } from '@tauri-apps/api/fs';
+import { appWindow } from '@tauri-apps/api/window'
+
+import { Command } from '@tauri-apps/api/shell'
+import { appDataDir, appLocalDataDir } from '@tauri-apps/api/path';
+
+
+
+
+
+function App() {
+  const [greetMsg, setGreetMsg] = useState("");
+  const [name, setName] = useState("");
+
+  async function greet() {
+    // Learn more about Tauri commands at https://tauri.app/v1/guides/features/command
+    setGreetMsg(await invoke("greet", { name }));
+  }
+
+  useEffect(() => {
+    if (typeof document === 'undefined') return
+    document
+      .getElementById('titlebar-minimize')!
+      .addEventListener('click', () => appWindow.minimize())
+    document
+      .getElementById('titlebar-maximize')!
+      .addEventListener('click', () => appWindow.toggleMaximize())
+    document
+      .getElementById('titlebar-close')!
+      .addEventListener('click', () => appWindow.close())
+  }, [])
+
+  return (
+    <main className="w-full h-screen flex relative">
+      <div data-tauri-drag-region className="titlebar">
+        <div className="titlebar-button" id="titlebar-minimize">
+          <img
+            src="https://api.iconify.design/mdi:window-minimize.svg"
+            alt="minimize"
+          />
+        </div>
+        <div className="titlebar-button" id="titlebar-maximize">
+          <img
+            src="https://api.iconify.design/mdi:window-maximize.svg"
+            alt="maximize"
+          />
+        </div>
+        <div className="titlebar-button" id="titlebar-close">
+          <img src="https://api.iconify.design/mdi:close.svg" alt="close" />
+        </div>
+      </div>
+      <Dialog>
+        <DialogTrigger asChild>
+          <Button className="absolute bottom-5 left-5">
+            <FaRegPlusSquare className="text-white" />
+          </Button>
+        </DialogTrigger>
+        <DialogContent className="sm:max-w-[425px]">
+          <DialogHeader>
+            <DialogTitle>Add Instance</DialogTitle>
+            {/* <DialogDescription>
+              Make changes to your profile here. Click save when you're done.
+            </DialogDescription> */}
+          </DialogHeader>
+          <div>
+          <Tabs defaultValue="account" className="w-full">
+            <TabsList className="w-full items-start justify-start">
+              <TabsTrigger value="alpha">Alpha</TabsTrigger>
+              <TabsTrigger value="daily">Daily</TabsTrigger>
+            </TabsList>
+            <TabsContent value="alpha">
+
+            </TabsContent>
+            <TabsContent value="daily"></TabsContent>
+          </Tabs>
+
+          </div>
+          <DialogFooter>
+            <DialogClose asChild>
+              <Button type="submit" onClick={async () => {
+                console.log(await invoke("run_downloader", { path: await appDataDir()}))
+                console.log(await appDataDir())
+
+              }}>Save changes</Button>
+            </DialogClose>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
+    </main>
+  );
+}
+
+export default App;
