@@ -2,6 +2,11 @@
   @tailwind components;
   @tailwind utilities;
 
+html {
+  position: sticky;
+  overflow: hidden;
+}
+
 .titlebar {
   height: 30px;
   @apply bg-slate-200;

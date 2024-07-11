@@ -16,7 +16,10 @@ with requests.get(url, stream=True) as resp:
     with open(save_path + "/current/file.zip", "wb") as f:
         for i, chunk in enumerate(resp.iter_content(10000)):
             f.write(chunk)
+            sys.stdout.flush()
             print(f"[download_percentage]{round((i * chunk_size) / file_size * 100, 1)}%")
+
+print("[download_finished]")
 # print("Fetched")
 # if response.status_code == 200:
 #     with open("file.zip", "wb") as file:

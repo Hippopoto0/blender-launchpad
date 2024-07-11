@@ -24,6 +24,8 @@ import { appWindow } from '@tauri-apps/api/window'
 
 import { Command } from '@tauri-apps/api/shell'
 import { appDataDir, appLocalDataDir } from '@tauri-apps/api/path';
+import DownloadingThumbnail from "./features/thumbnails/DownloadingThumbnail";
+import { startMessageListener } from "./messaging/MessageHandler";
 
 
 
@@ -39,6 +41,8 @@ function App() {
   }
 
   useEffect(() => {
+    startMessageListener()
+
     if (typeof document === 'undefined') return
     document
       .getElementById('titlebar-minimize')!
@@ -52,7 +56,7 @@ function App() {
   }, [])
 
   return (
-    <main className="w-full h-screen flex relative">
+    <main className="w-full h-screen flex flex-col relative">
       <div data-tauri-drag-region className="titlebar">
         <div className="titlebar-button" id="titlebar-minimize">
           <img
@@ -107,6 +111,10 @@ function App() {
           </DialogFooter>
         </DialogContent>
       </Dialog>
+      <div id="spacer" className="h-8 w-full"></div>
+      <div className="flex-1 m-4">
+        <DownloadingThumbnail />
+      </div>
     </main>
   );
 }
