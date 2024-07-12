@@ -26,7 +26,7 @@ import { Command } from '@tauri-apps/api/shell'
 import { appDataDir, appLocalDataDir } from '@tauri-apps/api/path';
 import DownloadingThumbnail from "./features/thumbnails/DownloadingThumbnail";
 import { startMessageListener } from "./messaging/MessageHandler";
-import VersionsList from "./features/scraper/VersionsList";
+import VersionsList, { fetchDailyBuilds } from "./features/scraper/VersionsList";
 
 
 
@@ -43,6 +43,7 @@ function App() {
 
   useEffect(() => {
     startMessageListener()
+    fetchDailyBuilds()
 
     if (typeof document === 'undefined') return
     document

@@ -66,10 +66,24 @@ async fn run_downloader(app: tauri::AppHandle, path: String) -> String {
     format!("{:?}", std::env::current_exe().unwrap())
 }
 
+#[tauri::command]
+async fn fetch_daily() -> String {
+    let output = Command::new("python")
+        .arg("./src/scraper.py")
+        .output()
+        .expect("Failed to execute script");
+    println!("{}", String::from_utf8_lossy(&output.stdout));
+
+    format!("{}", String::from_utf8_lossy(&output.stdout))
+
+
+}
+
 fn main() {
     tauri::Builder::default()
-        .invoke_handler(tauri::generate_handler![greet])
-        .invoke_handler(tauri::generate_handler![run_downloader])
+        .invoke_handler(tauri::generate_handler![greet, run_downloader, fetch_daily])
+        // .invoke_handler(tauri::generate_handler![run_downloader])
+        // .invoke_handler(tauri::generate_handler![fetch_daily])
         .run(tauri::generate_context!())
         .expect("error while running tauri application");
 }

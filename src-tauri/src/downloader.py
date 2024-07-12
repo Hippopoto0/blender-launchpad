@@ -1,8 +1,8 @@
 import requests
 import sys
 
-# url = "https://cdn.builder.blender.org/download/daily/archive/blender-4.3.0-alpha+main.e114467a5463-windows.amd64-release.zip"
-url = "https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-zip-file.zip"
+url = "https://cdn.builder.blender.org/download/daily/archive/blender-4.3.0-alpha+main.e114467a5463-windows.amd64-release.zip"
+# url = "https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-zip-file.zip"
 print("Getting fetch")
 # response = requests.get(url, stream=True)
 # file_size = int(response.headers.get("Content-Length", None))
