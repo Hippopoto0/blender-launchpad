@@ -26,6 +26,7 @@ import { Command } from '@tauri-apps/api/shell'
 import { appDataDir, appLocalDataDir } from '@tauri-apps/api/path';
 import DownloadingThumbnail from "./features/thumbnails/DownloadingThumbnail";
 import { startMessageListener } from "./messaging/MessageHandler";
+import VersionsList from "./features/scraper/VersionsList";
 
 
 
@@ -94,7 +95,7 @@ function App() {
               <TabsTrigger value="daily">Daily</TabsTrigger>
             </TabsList>
             <TabsContent value="alpha">
-
+              <VersionsList />
             </TabsContent>
             <TabsContent value="daily"></TabsContent>
           </Tabs>
