@@ -32,7 +32,7 @@ for release_row in all_release_rows:
     # downloadableVersion.url = link
     
     downloadableVersion = DownloadableVersion(link, items[0].text, date, items[1].text, arch)
-    if arch == "windows x64":
+    if arch == "windows x64" and "sha256" not in link:
         releases.append({"url": downloadableVersion.url,
                          "version": downloadableVersion.version,
                          "variant": downloadableVersion.variant,

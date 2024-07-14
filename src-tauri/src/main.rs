@@ -19,7 +19,7 @@ struct Payload {
 }
 
 #[tauri::command]
-async fn run_downloader(app: tauri::AppHandle, path: String) -> String {
+async fn run_downloader(app: tauri::AppHandle, path: String, url: String) -> String {
     let path = path.to_string();
     // Create a new thread
     let handle = std::thread::spawn(move || {
@@ -27,6 +27,7 @@ async fn run_downloader(app: tauri::AppHandle, path: String) -> String {
         let mut child = Command::new("python")
             .arg("./src/downloader.py")
             .arg(path)
+            .arg(url)
             .stdout(Stdio::piped())
             .spawn()
             .expect("Failed to execute script");

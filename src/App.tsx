@@ -105,7 +105,7 @@ function App() {
           <DialogFooter>
             <DialogClose asChild>
               <Button type="submit" onClick={async () => {
-                console.log(await invoke("run_downloader", { path: await appDataDir()}))
+                console.log(await invoke("run_downloader", { path: await appDataDir(), url: "https://cdn.builder.blender.org/download/daily/archive/blender-4.3.0-alpha+main.e114467a5463-windows.amd64-release.zip"}))
                 console.log(await appDataDir())
 
               }}>Save changes</Button>

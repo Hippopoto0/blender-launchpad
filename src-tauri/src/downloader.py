@@ -8,8 +8,9 @@ print("Getting fetch")
 # file_size = int(response.headers.get("Content-Length", None))
 
 save_path = sys.argv[1]
+url_to_download = sys.argv[2]
 
-with requests.get(url, stream=True) as resp:
+with requests.get(url_to_download, stream=True) as resp:
     file_size = int(resp.headers.get("Content-Length", None))
     chunk_size = 10000
     

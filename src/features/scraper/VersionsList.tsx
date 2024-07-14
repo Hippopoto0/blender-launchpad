@@ -1,6 +1,8 @@
 import { invoke } from '@tauri-apps/api'
 import { release } from 'os'
+import { FaDownload } from 'react-icons/fa'
 import { create } from 'zustand'
+import { downloadVersion } from '../downloading/DownloadManager'
 
 type BlenderRelease = {
     link: string,
@@ -20,6 +22,8 @@ const useAlphaVersionsStore = create<AlphaVersionsState>()((set) => ({
 export async function fetchDailyBuilds() {
     let dailyBuilds: string = await invoke("fetch_daily")
     let releasesAsJSON = JSON.parse(dailyBuilds)
+    useAlphaVersionsStore.setState({releases: [] })
+    console.log("Being called")
     releasesAsJSON.forEach((release: any) => {
         useAlphaVersionsStore.setState({ releases: [...useAlphaVersionsStore.getState().releases, {
             link: release.url,
@@ -29,13 +33,24 @@ export async function fetchDailyBuilds() {
             arch: release.arch
         }] })
     });
+
+    console.log(useAlphaVersionsStore.getState())
 }
 
 export default function VersionsList() {
-    const links = useAlphaVersionsStore((state) => state.releases)
-    return <div>
-        {links.map((item) =>
-            <h1>{item.version}</h1>
+    const releases = useAlphaVersionsStore((state) => state.releases)
+    return <div className='w-full h-40 m-2 flex flex-col gap-2 overflow-y-scroll'>
+        {releases.map((release) =>
+            <div className='w-full grid grid-cols-[5rem_10rem_5rem__auto]'>
+                <h1 className='font-bold text-left'>{release.version.replace("Blender ", "")}</h1>
+                <div className={`font-bold text-left ${release.variant == "Alpha" ? "text-red-400" : "text-blue-400"}`}>{release.variant}</div>
+                <p className='text-sm opacity-30'>{release.dateReleased}</p>
+                <button 
+                    onClick={() => downloadVersion(release.link)}
+                    className='w-8 flex items-center justify-center ml-auto mr-2 bg-blue-500'>
+                    <FaDownload className='text-white' />
+                </button>
+            </div>
         )}
     </div>
 }
