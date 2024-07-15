@@ -27,6 +27,8 @@ import { appDataDir, appLocalDataDir } from '@tauri-apps/api/path';
 import DownloadingThumbnail from "./features/thumbnails/DownloadingThumbnail";
 import { startMessageListener } from "./messaging/MessageHandler";
 import VersionsList, { fetchDailyBuilds } from "./features/scraper/VersionsList";
+import { BlenderInstance, fetchDownloadedInstances, useInstancesStore } from "./features/thumbnails/ThumbnailManager";
+import InstanceThumbnail from "./features/thumbnails/InstanceThumbnail";
 
 
 
@@ -35,6 +37,7 @@ import VersionsList, { fetchDailyBuilds } from "./features/scraper/VersionsList"
 function App() {
   const [greetMsg, setGreetMsg] = useState("");
   const [name, setName] = useState("");
+  const instances = useInstancesStore((state) => state.instances)
 
   async function greet() {
     // Learn more about Tauri commands at https://tauri.app/v1/guides/features/command
@@ -43,6 +46,7 @@ function App() {
 
   useEffect(() => {
     startMessageListener()
+    fetchDownloadedInstances()
     fetchDailyBuilds()
 
     if (typeof document === 'undefined') return
@@ -116,6 +120,9 @@ function App() {
       <div id="spacer" className="h-8 w-full"></div>
       <div className="flex-1 m-4">
         <DownloadingThumbnail />
+        {instances.map((instance: BlenderInstance) =>
+          <InstanceThumbnail variant={instance.variant} version={instance.version} />
+        )}
       </div>
     </main>
   );

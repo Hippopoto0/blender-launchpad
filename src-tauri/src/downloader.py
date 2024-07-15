@@ -1,6 +1,7 @@
 import requests
 import sys
 import zipfile
+import os
 
 url = "https://cdn.builder.blender.org/download/daily/archive/blender-4.3.0-alpha+main.e114467a5463-windows.amd64-release.zip"
 # url = "https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-zip-file.zip"
@@ -12,6 +13,7 @@ save_path, url_to_download, extract_path = "", "", ""
 if len(sys.argv) > 1:
     save_path = sys.argv[1] + "/current/file.zip"
     url_to_download = sys.argv[2]
+    downloaded_name = url_to_download.split("daily/")[1].split(".zip")[0]
     extract_path = sys.argv[1] + "/instances/"
 else:
     save_path = "file.zip"
@@ -28,6 +30,7 @@ with requests.get(url_to_download, stream=True) as resp:
             sys.stdout.flush()
             print(f"[download_percentage]{round((i * chunk_size) / file_size * 100, 1)}%")
 
+# os.mkdir(extract_path)
 with zipfile.ZipFile(save_path, "r") as zipRef:
     for index, member in enumerate(zipRef.infolist()):
         try:

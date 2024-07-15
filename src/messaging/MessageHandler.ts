@@ -28,6 +28,9 @@ export async function startMessageListener() {
             let val = parseFloat(message.split("[extracting_percentage]")[1])
             useDownloadingStore.setState({ progress: val, state: "extracting"})
         }
+        if (message.startsWith("[download_finished]")) {
+            useDownloadingStore.setState({ progress: 0.0, state: "finished"})
+        }
         console.log("Event triggered from rust!\nPayload: " + event.payload.message);
     });
 }
@@ -40,7 +43,7 @@ interface DownloadingState {
 }
 
 export const useDownloadingStore = create<DownloadingState>()((set) => ({
-    state: "downloading",
+    state: "finished",
     progress: 0,
     setProgress: (val) => set((state) => ( { progress: val }))
 }))

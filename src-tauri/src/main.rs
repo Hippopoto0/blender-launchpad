@@ -80,9 +80,20 @@ async fn fetch_daily() -> String {
 
 }
 
+#[tauri::command]
+async fn find_instances() -> String {
+    let output = Command::new("python")
+        .arg("./src/fetch_downloaded.py")
+        .output()
+        .expect("Failed to execute script");
+    println!("{}", String::from_utf8_lossy(&output.stdout));
+
+    format!("{}", String::from_utf8_lossy(&output.stdout))
+}
+
 fn main() {
     tauri::Builder::default()
-        .invoke_handler(tauri::generate_handler![greet, run_downloader, fetch_daily])
+        .invoke_handler(tauri::generate_handler![greet, run_downloader, fetch_daily, find_instances])
         // .invoke_handler(tauri::generate_handler![run_downloader])
         // .invoke_handler(tauri::generate_handler![fetch_daily])
         .run(tauri::generate_context!())
