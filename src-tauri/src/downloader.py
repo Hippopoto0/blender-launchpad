@@ -16,7 +16,7 @@ if len(sys.argv) > 1:
 else:
     save_path = "file.zip"
     url_to_download = url
-    extract_path = "/instances/"
+    extract_path = "./instances/"
 
 with requests.get(url_to_download, stream=True) as resp:
     file_size = int(resp.headers.get("Content-Length", None))
@@ -28,10 +28,10 @@ with requests.get(url_to_download, stream=True) as resp:
             sys.stdout.flush()
             print(f"[download_percentage]{round((i * chunk_size) / file_size * 100, 1)}%")
 
-with zipfile.ZipFile(extract_path + "testthing", "r") as zipRef:
+with zipfile.ZipFile(save_path, "r") as zipRef:
     for index, member in enumerate(zipRef.infolist()):
         try:
-            zipRef.extract(member, "target")
+            zipRef.extract(member, extract_path)
             # print(index / zipRef.infolist().__len__())
             print(f"[extracting_percentage]{round(index / len(zipRef.infolist()) * 100, 2)}")
         except zipfile.error:
