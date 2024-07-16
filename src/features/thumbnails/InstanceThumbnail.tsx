@@ -2,7 +2,7 @@ import { BlenderInstance } from "./ThumbnailManager";
 
 
 export default function InstanceThumbnail(props: BlenderInstance) {
-    return <div className="w-48 h-32 rounded-md overflow-hidden relative shadow-md">
+    return <div className="w-48 h-32 rounded-md overflow-hidden relative shadow-md m-2 shrink-0">
         <img className="absolute top-0 left-0" src={`https://picsum.photos/seed/${Math.random()}/300/200/`} alt="oops" />
         <div className="absolute top-0 left-0 w-full h-full bg-white/70 flex items-center justify-center">
         </div>

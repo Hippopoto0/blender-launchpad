@@ -11,7 +11,7 @@ print("Getting fetch")
 
 save_path, url_to_download, extract_path = "", "", ""
 if len(sys.argv) > 1:
-    save_path = sys.argv[1] + "/current/file.zip"
+    save_path = (sys.argv[1] + "current\\file.zip").replace("\\", "/")
     url_to_download = sys.argv[2]
     downloaded_name = url_to_download.split("daily/")[1].split(".zip")[0]
     extract_path = sys.argv[1] + "/instances/"
@@ -19,6 +19,12 @@ else:
     save_path = "file.zip"
     url_to_download = url
     extract_path = "./instances/"
+
+print("savepath: " + save_path)
+print("URL: " + url_to_download)
+if os.path.exists(save_path):
+    print("removing file")
+    os.remove(save_path)
 
 with requests.get(url_to_download, stream=True) as resp:
     file_size = int(resp.headers.get("Content-Length", None))
@@ -31,6 +37,7 @@ with requests.get(url_to_download, stream=True) as resp:
             print(f"[download_percentage]{round((i * chunk_size) / file_size * 100, 1)}%")
 
 # os.mkdir(extract_path)
+
 with zipfile.ZipFile(save_path, "r") as zipRef:
     for index, member in enumerate(zipRef.infolist()):
         try:

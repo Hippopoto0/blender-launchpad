@@ -118,7 +118,7 @@ function App() {
         </DialogContent>
       </Dialog>
       <div id="spacer" className="h-8 w-full"></div>
-      <div className="flex-1 m-4">
+      <div className="flex m-4 flex-row flex-wrap justify-start items-start">
         <DownloadingThumbnail />
         {instances.map((instance: BlenderInstance) =>
           <InstanceThumbnail variant={instance.variant} version={instance.version} />

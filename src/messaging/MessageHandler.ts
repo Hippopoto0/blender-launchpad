@@ -1,3 +1,4 @@
+import { fetchDownloadedInstances } from '@/features/thumbnails/ThumbnailManager';
 import { listen } from '@tauri-apps/api/event';
 import { create } from 'zustand'
 
@@ -30,6 +31,7 @@ export async function startMessageListener() {
         }
         if (message.startsWith("[download_finished]")) {
             useDownloadingStore.setState({ progress: 0.0, state: "finished"})
+            fetchDownloadedInstances()
         }
         console.log("Event triggered from rust!\nPayload: " + event.payload.message);
     });
