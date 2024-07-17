@@ -29,6 +29,7 @@ import { startMessageListener } from "./messaging/MessageHandler";
 import VersionsList, { fetchDailyBuilds } from "./features/scraper/VersionsList";
 import { BlenderInstance, fetchDownloadedInstances, useInstancesStore } from "./features/thumbnails/ThumbnailManager";
 import InstanceThumbnail from "./features/thumbnails/InstanceThumbnail";
+import { GrAdd } from "react-icons/gr";
 
 
 
@@ -62,8 +63,8 @@ function App() {
   }, [])
 
   return (
-    <main className="w-full h-screen flex flex-col relative">
-      <div data-tauri-drag-region className="titlebar">
+    <main className="w-full h-screen flex flex-col relative bg-slate-700">
+      <div data-tauri-drag-region className="titlebar bg-slate-800">
         <div className="titlebar-button" id="titlebar-minimize">
           <img
             src="https://api.iconify.design/mdi:window-minimize.svg"
@@ -82,20 +83,20 @@ function App() {
       </div>
       <Dialog>
         <DialogTrigger asChild>
-          <Button className="absolute bottom-5 left-5">
-            <FaRegPlusSquare className="text-white" />
+          <Button className="absolute bottom-5 left-5 bg-teal-600 hover:bg-teal-700">
+              <GrAdd />
           </Button>
         </DialogTrigger>
-        <DialogContent className="sm:max-w-[425px]">
+        <DialogContent className="sm:max-w-[425px] bg-slate-600 pl-4">
           <DialogHeader>
-            <DialogTitle>Add Instance</DialogTitle>
+            <DialogTitle className="text-white">Add Instance</DialogTitle>
             {/* <DialogDescription>
               Make changes to your profile here. Click save when you're done.
             </DialogDescription> */}
           </DialogHeader>
           <div>
-          <Tabs defaultValue="account" className="w-full">
-            <TabsList className="w-full items-start justify-start">
+          <Tabs defaultValue="alpha" className="w-full">
+            <TabsList className="items-start justify-start bg-slate-700">
               <TabsTrigger value="alpha">Alpha</TabsTrigger>
               <TabsTrigger value="daily">Daily</TabsTrigger>
             </TabsList>
@@ -108,7 +109,9 @@ function App() {
           </div>
           <DialogFooter>
             <DialogClose asChild>
-              <Button type="submit" onClick={async () => {
+              <Button 
+                className="bg-teal-600 hover:bg-teal-700"
+                type="submit" onClick={async () => {
                 console.log(await invoke("run_downloader", { path: await appDataDir(), url: "https://cdn.builder.blender.org/download/daily/archive/blender-4.3.0-alpha+main.e114467a5463-windows.amd64-release.zip"}))
                 console.log(await appDataDir())
 
