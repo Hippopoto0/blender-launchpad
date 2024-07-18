@@ -3,7 +3,8 @@ import { create } from "zustand";
 
 export type BlenderInstance = {
     version: string,
-    variant: string
+    variant: string,
+    path: string
 }
 
 interface BlenderInstances {
@@ -21,8 +22,12 @@ export async function fetchDownloadedInstances() {
 
     let instancesToAdd: BlenderInstance[] = []
     instancesAsJSON.forEach((item: any) => {
-        instancesToAdd = [...instancesToAdd, {version: item.version, variant: item.variant}]
+        instancesToAdd = [...instancesToAdd, {version: item.version, variant: item.variant, path: item.path}]
     });
 
     useInstancesStore.setState({ instances: instancesToAdd})
+}
+
+export async function launchInstance(instancePath: string) {
+    await invoke("launch_instance", { path: instancePath })
 }

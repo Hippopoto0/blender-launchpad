@@ -1,5 +1,5 @@
 import { HiPlay } from "react-icons/hi";
-import { BlenderInstance } from "./ThumbnailManager";
+import { BlenderInstance, launchInstance } from "./ThumbnailManager";
 import { GrPlayFill } from "react-icons/gr";
 import { RiPlayLargeFill } from "react-icons/ri";
 import { useState } from "react";
@@ -8,6 +8,7 @@ import { useState } from "react";
 export default function InstanceThumbnail(props: BlenderInstance) {
     const [isHovering, setHovering] = useState(false)
     return <div 
+            onClick={() => launchInstance(props.path)}
             onMouseEnter={() => setHovering(true)}
             onMouseLeave={() => setHovering(false)}
             className="w-48 h-32 rounded-md overflow-hidden relative shadow-md m-2 shrink-0 cursor-pointer">

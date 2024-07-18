@@ -91,9 +91,16 @@ async fn find_instances() -> String {
     format!("{}", String::from_utf8_lossy(&output.stdout))
 }
 
+#[tauri::command]
+async fn launch_instance(path: String) -> String {
+    let output = Command::new(path + "/blender.exe").output().expect("failed to launch");
+
+    format!("{}", "Should have ran")
+}
+
 fn main() {
     tauri::Builder::default()
-        .invoke_handler(tauri::generate_handler![greet, run_downloader, fetch_daily, find_instances])
+        .invoke_handler(tauri::generate_handler![greet, run_downloader, fetch_daily, find_instances, launch_instance])
         // .invoke_handler(tauri::generate_handler![run_downloader])
         // .invoke_handler(tauri::generate_handler![fetch_daily])
         .run(tauri::generate_context!())

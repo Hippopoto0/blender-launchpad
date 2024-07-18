@@ -16,7 +16,8 @@ for f in os.scandir(path_to_instances):
     # print(f.name)
     version = f.name.split("-")[1]
     variant = f.name.split("-")[2].split("+")[0]
+    folder_name = f.name
 
-    instances.append({"version": version, "variant": variant})
+    instances.append({"version": version, "variant": variant, "path": path_to_instances + "/" + folder_name})
 
 print(f"{json.dumps(instances)}")

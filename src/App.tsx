@@ -95,15 +95,15 @@ function App() {
             </DialogDescription> */}
           </DialogHeader>
           <div>
-          <Tabs defaultValue="alpha" className="w-full">
+          <Tabs defaultValue="daily" className="w-full">
             <TabsList className="items-start justify-start bg-slate-700">
-              <TabsTrigger value="alpha">Alpha</TabsTrigger>
               <TabsTrigger value="daily">Daily</TabsTrigger>
+              <TabsTrigger value="other">Other</TabsTrigger>
             </TabsList>
-            <TabsContent value="alpha">
+            <TabsContent value="daily">
               <VersionsList />
             </TabsContent>
-            <TabsContent value="daily"></TabsContent>
+            <TabsContent value="other"></TabsContent>
           </Tabs>
 
           </div>
@@ -124,7 +124,7 @@ function App() {
       <div className="flex m-4 flex-row flex-wrap justify-start items-start">
         <DownloadingThumbnail />
         {instances.map((instance: BlenderInstance) =>
-          <InstanceThumbnail variant={instance.variant} version={instance.version} />
+          <InstanceThumbnail variant={instance.variant} version={instance.version} path={instance.path} />
         )}
       </div>
     </main>
