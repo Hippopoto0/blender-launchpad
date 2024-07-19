@@ -20,9 +20,21 @@ import {
   ContextMenuTrigger,
 } from "@/components/ui/context-menu"
 
+function renderVariantText(instance: BlenderInstance) {
+    if (instance.variant == "stable") {
+        return <p className="absolute font-bold text-sm right-2 bottom-2 text-green-400">Stable</p>
+    } else if (instance.variant == "alpha") {
+        return <p className="absolute font-bold text-sm right-2 bottom-2 text-red-400">Alpha</p>
+    } else if (instance.variant == "candidate") {
+        return <p className="absolute font-bold text-sm right-2 bottom-2 text-blue-400">Candidate</p>
+    } else {
+        return <p className="absolute font-bold text-xs right-2 bottom-2 text-orange-400">{instance.variant}</p>
+    }
+}
 
 export default function InstanceThumbnail(props: BlenderInstance) {
     const [isHovering, setHovering] = useState(false)
+
     return <ContextMenu>
         <ContextMenuTrigger>
             <div 
@@ -38,11 +50,13 @@ export default function InstanceThumbnail(props: BlenderInstance) {
                     {/* <p className="absolute right-2 bottom-2">
                     </p> */}
                     {
-                        {
-                            "stable": <p className="absolute font-bold right-2 bottom-2 text-green-400">Stable</p>,
-                            "alpha": <p className="absolute font-bold right-2 bottom-2 text-red-400">Alpha</p>,
-                            "candidate": <p className="absolute font-bold right-2 bottom-2 text-sky-400">Candidate</p>,
-                        }[props.variant]
+                    renderVariantText(props)
+                        // {
+                        //     "stable": <p className="absolute font-bold right-2 bottom-2 text-green-400">Stable</p>,
+                        //     "alpha": <p className="absolute font-bold right-2 bottom-2 text-red-400">Alpha</p>,
+                        //     "candidate": <p className="absolute font-bold right-2 bottom-2 text-sky-400">Candidate</p>,
+
+                        // }[props.variant]
                     }
                 </div>
                 {/* Hover controls */}

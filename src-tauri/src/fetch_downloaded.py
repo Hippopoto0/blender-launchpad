@@ -16,6 +16,12 @@ for f in os.scandir(path_to_instances):
     # print(f.name)
     version = f.name.split("-")[1]
     variant = f.name.split("-")[2].split("+")[0]
+    after_alpha = f.name.split("+")[1]
+    if variant == "alpha":
+        branch_name = after_alpha.split(".")[0]
+        if "main" not in branch_name:
+            variant = branch_name
+
     folder_name = f.name
 
     instances.append({"version": version, "variant": variant, "path": path_to_instances + "/" + folder_name})
