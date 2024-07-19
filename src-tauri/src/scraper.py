@@ -3,8 +3,13 @@ import requests
 from dataclasses import dataclass
 from typing import List
 import json
+import sys
 
-soup = BeautifulSoup(requests.get("https://builder.blender.org/download/daily/").content, "html.parser")
+soup: BeautifulSoup = None
+if len(sys.argv) > 1 and sys.argv[1] == "branch":
+    soup = BeautifulSoup(requests.get("https://builder.blender.org/download/experimental/").content, "html.parser")
+else:
+    soup = BeautifulSoup(requests.get("https://builder.blender.org/download/daily/").content, "html.parser")
 
 all_release_rows = soup.select("li.t-row.build")
 

@@ -73,6 +73,20 @@ async fn fetch_daily() -> String {
         .arg("./src/scraper.py")
         .output()
         .expect("Failed to execute script");
+    // println!("{}", String::from_utf8_lossy(&output.stdout));
+
+    format!("{}", String::from_utf8_lossy(&output.stdout))
+
+
+}
+
+#[tauri::command]
+async fn fetch_branch() -> String {
+    let output = Command::new("python")
+        .arg("./src/scraper.py")
+        .arg("branch")
+        .output()
+        .expect("Failed to execute script");
     println!("{}", String::from_utf8_lossy(&output.stdout));
 
     format!("{}", String::from_utf8_lossy(&output.stdout))
@@ -114,7 +128,7 @@ async fn delete_instance(path: String) -> String {
 
 fn main() {
     tauri::Builder::default()
-        .invoke_handler(tauri::generate_handler![greet, run_downloader, fetch_daily, find_instances, launch_instance, delete_instance])
+        .invoke_handler(tauri::generate_handler![greet, run_downloader, fetch_daily, find_instances, launch_instance, delete_instance, fetch_branch])
         // .invoke_handler(tauri::generate_handler![run_downloader])
         // .invoke_handler(tauri::generate_handler![fetch_daily])
         .run(tauri::generate_context!())

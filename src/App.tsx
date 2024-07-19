@@ -26,7 +26,7 @@ import { Command } from '@tauri-apps/api/shell'
 import { appDataDir, appLocalDataDir } from '@tauri-apps/api/path';
 import DownloadingThumbnail from "./features/thumbnails/DownloadingThumbnail";
 import { startMessageListener } from "./messaging/MessageHandler";
-import VersionsList, { fetchDailyBuilds } from "./features/scraper/VersionsList";
+import { fetchBranchBuilds, fetchDailyBuilds, VersionsListBranch, VersionsList } from "./features/scraper/VersionsList";
 import { BlenderInstance, fetchDownloadedInstances, useInstancesStore } from "./features/thumbnails/ThumbnailManager";
 import InstanceThumbnail from "./features/thumbnails/InstanceThumbnail";
 import { GrAdd } from "react-icons/gr";
@@ -49,6 +49,7 @@ function App() {
     startMessageListener()
     fetchDownloadedInstances()
     fetchDailyBuilds()
+    fetchBranchBuilds()
 
     if (typeof document === 'undefined') return
     document
@@ -87,7 +88,7 @@ function App() {
               <GrAdd />
           </Button>
         </DialogTrigger>
-        <DialogContent className="sm:max-w-[425px] bg-slate-600 pl-4">
+        <DialogContent className="sm:max-w-[500px] bg-slate-600 pl-4">
           <DialogHeader>
             <DialogTitle className="text-white">Add Instance</DialogTitle>
             {/* <DialogDescription>
@@ -101,9 +102,11 @@ function App() {
               <TabsTrigger value="other">Other</TabsTrigger>
             </TabsList>
             <TabsContent value="daily">
-              <VersionsList />
+              <VersionsList/>
             </TabsContent>
-            <TabsContent value="other"></TabsContent>
+            <TabsContent value="other">
+              <VersionsListBranch />
+            </TabsContent>
           </Tabs>
 
           </div>
