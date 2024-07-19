@@ -12,7 +12,7 @@ export default function DownloadingThumbnail() {
             </div>
             <div className="absolute top-0 left-0 h-full bg-black/20 shadow-lg transition-all" style={{width: `${progress}%`}}></div>
             <div className="absolute top-0 left-0 h-full w-full flex items-center justify-center">
-                <h1 className="font-bold text-2xl">{progress}</h1>
+                <h1 className="font-bold text-2xl">{progress.toFixed(1)}</h1>
             </div>
         </div>
     }
