@@ -87,7 +87,7 @@ async fn fetch_branch() -> String {
         .arg("branch")
         .output()
         .expect("Failed to execute script");
-    println!("{}", String::from_utf8_lossy(&output.stdout));
+    // println!("{}", String::from_utf8_lossy(&output.stdout));
 
     format!("{}", String::from_utf8_lossy(&output.stdout))
 
