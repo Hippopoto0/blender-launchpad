@@ -93,14 +93,28 @@ async fn find_instances() -> String {
 
 #[tauri::command]
 async fn launch_instance(path: String) -> String {
+    let path = path.to_string();
     let output = Command::new(path + "/blender.exe").output().expect("failed to launch");
 
     format!("{}", "Should have ran")
 }
 
+#[tauri::command]
+async fn delete_instance(path: String) -> String {
+    let output = Command::new("python")
+        .arg("./src/delete_instance.py")
+        .arg(path)
+        .output()
+        .expect("Failed to execute script");
+
+    println!("{}", String::from_utf8_lossy(&output.stdout));
+    
+    format!("{}", "Should have ran")
+}
+
 fn main() {
     tauri::Builder::default()
-        .invoke_handler(tauri::generate_handler![greet, run_downloader, fetch_daily, find_instances, launch_instance])
+        .invoke_handler(tauri::generate_handler![greet, run_downloader, fetch_daily, find_instances, launch_instance, delete_instance])
         // .invoke_handler(tauri::generate_handler![run_downloader])
         // .invoke_handler(tauri::generate_handler![fetch_daily])
         .run(tauri::generate_context!())

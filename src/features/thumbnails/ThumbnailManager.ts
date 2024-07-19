@@ -28,6 +28,12 @@ export async function fetchDownloadedInstances() {
     useInstancesStore.setState({ instances: instancesToAdd})
 }
 
+export async function deleteInstance(instancePath: string) {
+    await invoke("delete_instance", { path: instancePath })
+
+    fetchDownloadedInstances()
+}
+
 export async function launchInstance(instancePath: string) {
     await invoke("launch_instance", { path: instancePath })
 }
