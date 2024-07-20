@@ -22,15 +22,22 @@ export async function startMessageListener() {
         console.log("got the message")
         if (message.startsWith("[download_percentage]")) {
             console.log("got here also")
-            let val = parseFloat(message.split("[download_percentage]")[1])
-            useDownloadingStore.setState({ progress: val, state: "downloading" })
+            let [valAsStr, folderName] = message.split("[download_percentage]")[1].split(",")
+            let val = parseFloat(valAsStr)
+            // useDownloadingStore.setState({ progress: val, state: "downloading" })
+            useDownloadingStore.getState().setDownloadState(folderName, {progress: val, state: "downloading"})
         }
         if (message.startsWith("[extracting_percentage]")) {
-            let val = parseFloat(message.split("[extracting_percentage]")[1])
-            useDownloadingStore.setState({ progress: val, state: "extracting"})
+            let [valAsStr, folderName] = message.split("[extracting_percentage]")[1].split(",")
+            let val = parseFloat(valAsStr)
+            // useDownloadingStore.setState({ progress: val, state: "extracting"})
+            useDownloadingStore.getState().setDownloadState(folderName, {progress: val, state: "extracting"})
         }
         if (message.startsWith("[download_finished]")) {
-            useDownloadingStore.setState({ progress: 0.0, state: "finished"})
+            // useDownloadingStore.setState({ progress: 0.0, state: "finished"})
+            let [valAsStr, folderName] = message.split("[download_finished]")[1].split(",")
+            let val = parseFloat(valAsStr)
+            useDownloadingStore.getState().setDownloadState(folderName, {progress: 100, state: "finished"})
             fetchDownloadedInstances()
         }
         console.log("Event triggered from rust!\nPayload: " + event.payload.message);
@@ -38,15 +45,25 @@ export async function startMessageListener() {
 }
 
 
-interface DownloadingState {
+interface DownloadingStateOld {
     state: "downloading" | "extracting" | "finished"
     progress: number
     setProgress: (val: number) => void 
 }
 
+interface DownloadingState {
+    currentlyDownloading: { [key: string]: InstanceDownloadState }
+    setDownloadState: (key: string, state: InstanceDownloadState) => void
+}
+
+export type InstanceDownloadState = {
+    state: "downloading" | "extracting" | "finished"
+    progress: number
+}
+
 export const useDownloadingStore = create<DownloadingState>()((set) => ({
-    state: "finished",
-    progress: 0,
-    setProgress: (val) => set((state) => ( { progress: val }))
+    currentlyDownloading: {},
+    setDownloadState: (key, progressState) => set((state) => ({ currentlyDownloading: {...state.currentlyDownloading, [key]: progressState }}))
+
 }))
 

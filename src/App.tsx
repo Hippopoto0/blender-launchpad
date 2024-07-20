@@ -30,6 +30,7 @@ import { fetchBranchBuilds, fetchDailyBuilds, VersionsListBranch, VersionsList }
 import { BlenderInstance, fetchDownloadedInstances, useInstancesStore } from "./features/thumbnails/ThumbnailManager";
 import InstanceThumbnail from "./features/thumbnails/InstanceThumbnail";
 import { GrAdd } from "react-icons/gr";
+import DownloadingThumbnailList from "./features/thumbnails/DownloadThumbnailList";
 
 
 
@@ -125,7 +126,7 @@ function App() {
       </Dialog>
       <div id="spacer" className="h-8 w-full"></div>
       <div className="flex m-4 flex-row flex-wrap justify-start items-start">
-        <DownloadingThumbnail />
+        <DownloadingThumbnailList />
         {instances.map((instance: BlenderInstance) =>
           <InstanceThumbnail variant={instance.variant} version={instance.version} path={instance.path} />
         )}
