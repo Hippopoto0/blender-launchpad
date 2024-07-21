@@ -1,15 +1,16 @@
-import { invoke } from "@tauri-apps/api";
 import { create } from "zustand";
+import { invoke } from "@tauri-apps/api";
 
 export type BlenderInstance = {
-    version: string,
-    variant: string,
-    path: string
+    version: string;
+    variant: string;
+    path: string;
+};
+
+export interface BlenderInstances {
+    instances: BlenderInstance[];
 }
 
-interface BlenderInstances {
-    instances: BlenderInstance[]
-}
 
 export const useInstancesStore = create<BlenderInstances>()((set) => ({
     instances: []

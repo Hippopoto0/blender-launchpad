@@ -1,4 +1,4 @@
-import { InstanceDownloadState, useDownloadingStore } from "@/messaging/MessageHandler"
+import { InstanceDownloadState } from "../downloading/DownloadManager"
 
 
 export default function DownloadingThumbnail(props: InstanceDownloadState) {

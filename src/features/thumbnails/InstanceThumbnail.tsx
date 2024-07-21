@@ -1,5 +1,5 @@
 import { HiPlay } from "react-icons/hi";
-import { BlenderInstance, deleteInstance, launchInstance } from "./ThumbnailManager";
+import { BlenderInstance, deleteInstance, launchInstance } from "../instances/InstanceManager";
 import { GrPlayFill } from "react-icons/gr";
 import { RiPlayLargeFill } from "react-icons/ri";
 import { useState } from "react";

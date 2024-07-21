@@ -11,25 +11,25 @@ type BlenderRelease = {
     dateReleased: string,
     arch: string
 }
-interface AlphaVersionsState {
+interface BlenderVersionsState {
     releases: BlenderRelease[]
 }
 
-const useAlphaVersionsStore = create<AlphaVersionsState>()((set) => ({
+const useDailyVersionsStore = create<BlenderVersionsState>()((set) => ({
     releases: []
 }))
 
-const useBranchVersionsStore = create<AlphaVersionsState>()((set) => ({
+const useBranchVersionsStore = create<BlenderVersionsState>()((set) => ({
     releases: []
 }))
 
 export async function fetchDailyBuilds() {
     let dailyBuilds: string = await invoke("fetch_daily")
     let releasesAsJSON = JSON.parse(dailyBuilds)
-    useAlphaVersionsStore.setState({releases: [] })
+    useDailyVersionsStore.setState({releases: [] })
     console.log("Being called")
     releasesAsJSON.forEach((release: any) => {
-        useAlphaVersionsStore.setState({ releases: [...useAlphaVersionsStore.getState().releases, {
+        useDailyVersionsStore.setState({ releases: [...useDailyVersionsStore.getState().releases, {
             link: release.url,
             version: release.version,
             variant: release.variant,
@@ -38,13 +38,13 @@ export async function fetchDailyBuilds() {
         }] })
     });
 
-    console.log(useAlphaVersionsStore.getState())
+    console.log(useDailyVersionsStore.getState())
 }
 
 export async function fetchBranchBuilds() {
     let branchBuilds: string = await invoke("fetch_branch")
     let releasesAsJSON = JSON.parse(branchBuilds)
-    useAlphaVersionsStore.setState({releases: [] })
+    useDailyVersionsStore.setState({releases: [] })
     console.log("Being called")
     releasesAsJSON.forEach((release: any) => {
         useBranchVersionsStore.setState({ releases: [...useBranchVersionsStore.getState().releases, {
@@ -60,7 +60,7 @@ export async function fetchBranchBuilds() {
 }
 
 export function VersionsList() {
-    const releases = useAlphaVersionsStore((state) => state.releases)
+    const releases = useDailyVersionsStore((state) => state.releases)
 
     return <div className=' h-40 m-2 flex flex-col gap-2 overflow-y-scroll'>
         {releases.map((release) =>
