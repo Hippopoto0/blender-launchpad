@@ -1,0 +1,1472 @@
+[
+    {
+        "link": "https://download.blender.org/release/Blender2.47/blender-2.47-windows-law.zip",
+        "version": "Blender 2.47",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.48/blender-2.48-windows64.zip",
+        "version": "Blender 2.48",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.49/blender-2.49-windows-py25.zip",
+        "version": "Blender 2.49",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.57/blender-2.57-windows32.zip",
+        "version": "Blender 2.57",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.57/blender-2.57-windows64.zip",
+        "version": "Blender 2.57",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.57/blender-2.57a-windows32.zip",
+        "version": "Blender 2.57a",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.57/blender-2.57a-windows64.zip",
+        "version": "Blender 2.57a",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.57/blender-2.57b-windows32.zip",
+        "version": "Blender 2.57b",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.57/blender-2.57b-windows64.zip",
+        "version": "Blender 2.57b",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.58/blender-2.58-windows32.zip",
+        "version": "Blender 2.58",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.58/blender-2.58-windows64.zip",
+        "version": "Blender 2.58",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.58/blender-2.58a-windows32.zip",
+        "version": "Blender 2.58a",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.58/blender-2.58a-windows64.zip",
+        "version": "Blender 2.58a",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.59/blender-2.59-windows32.zip",
+        "version": "Blender 2.59",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.59/blender-2.59-windows64.zip",
+        "version": "Blender 2.59",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.60/blender-2.60-windows32.zip",
+        "version": "Blender 2.60",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.60/blender-2.60-windows64.zip",
+        "version": "Blender 2.60",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.60/blender-2.60a-release-windows32.zip",
+        "version": "Blender 2.60a",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.60/blender-2.60a-release-windows64.zip",
+        "version": "Blender 2.60a",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.61/blender-2.61-release-windows32.zip",
+        "version": "Blender 2.61",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.61/blender-2.61-release-windows64.zip",
+        "version": "Blender 2.61",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.62/blender-2.62-release-windows32.zip",
+        "version": "Blender 2.62",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.62/blender-2.62-release-windows64.zip",
+        "version": "Blender 2.62",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.63/blender-2.63-release-windows32.zip",
+        "version": "Blender 2.63",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.63/blender-2.63-release-windows64.zip",
+        "version": "Blender 2.63",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.63/blender-2.63a-release-windows32.zip",
+        "version": "Blender 2.63a",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.63/blender-2.63a-release-windows64.zip",
+        "version": "Blender 2.63a",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.64/blender-2.64-release-windows32.zip",
+        "version": "Blender 2.64",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.64/blender-2.64-release-windows64.zip",
+        "version": "Blender 2.64",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.64/blender-2.64a-release-windows32.zip",
+        "version": "Blender 2.64a",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.64/blender-2.64a-release-windows64.zip",
+        "version": "Blender 2.64a",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.65/blender-2.65-release-windows32.zip",
+        "version": "Blender 2.65",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.65/blender-2.65-release-windows64.zip",
+        "version": "Blender 2.65",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.65/blender-2.65a-windows32.zip",
+        "version": "Blender 2.65a",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.65/blender-2.65a-windows64.zip",
+        "version": "Blender 2.65a",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.66/blender-2.66-windows32.zip",
+        "version": "Blender 2.66",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.66/blender-2.66-windows64.zip",
+        "version": "Blender 2.66",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.66/blender-2.66a-windows32.zip",
+        "version": "Blender 2.66a",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.66/blender-2.66a-windows64.zip",
+        "version": "Blender 2.66a",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.67/blender-2.67-windows32.zip",
+        "version": "Blender 2.67",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.67/blender-2.67-windows64.zip",
+        "version": "Blender 2.67",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.67/blender-2.67a-windows32.zip",
+        "version": "Blender 2.67a",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.67/blender-2.67a-windows64.zip",
+        "version": "Blender 2.67a",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.67/blender-2.67b-windows32.zip",
+        "version": "Blender 2.67b",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.67/blender-2.67b-windows64.zip",
+        "version": "Blender 2.67b",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.68/blender-2.68-windows32.zip",
+        "version": "Blender 2.68",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.68/blender-2.68-windows64.zip",
+        "version": "Blender 2.68",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.68/blender-2.68a-windows32.zip",
+        "version": "Blender 2.68a",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.68/blender-2.68a-windows64.zip",
+        "version": "Blender 2.68a",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.69/blender-2.69-windows32.zip",
+        "version": "Blender 2.69",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.69/blender-2.69-windows64.zip",
+        "version": "Blender 2.69",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.70/blender-2.70-windows32-vc2013_preview.zip",
+        "version": "Blender 2.70",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.70/blender-2.70-windows32.zip",
+        "version": "Blender 2.70",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.70/blender-2.70-windows64-vc2013_preview.zip",
+        "version": "Blender 2.70",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.70/blender-2.70-windows64.zip",
+        "version": "Blender 2.70",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.70/blender-2.70a-windows32-vc2013_preview.zip",
+        "version": "Blender 2.70a",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.70/blender-2.70a-windows32.zip",
+        "version": "Blender 2.70a",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.70/blender-2.70a-windows64-vc2013_preview.zip",
+        "version": "Blender 2.70a",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.70/blender-2.70a-windows64.zip",
+        "version": "Blender 2.70a",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.71/blender-2.71-windows32.zip",
+        "version": "Blender 2.71",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.71/blender-2.71-windows64.zip",
+        "version": "Blender 2.71",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.72/blender-2.72-windows32.zip",
+        "version": "Blender 2.72",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.72/blender-2.72-windows64.zip",
+        "version": "Blender 2.72",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.72/blender-2.72a-windows32.zip",
+        "version": "Blender 2.72a",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.72/blender-2.72a-windows64.zip",
+        "version": "Blender 2.72a",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.72/blender-2.72b-windows32.zip",
+        "version": "Blender 2.72b",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.72/blender-2.72b-windows64.zip",
+        "version": "Blender 2.72b",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.73/blender-2.73-windows32.zip",
+        "version": "Blender 2.73",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.73/blender-2.73-windows64.zip",
+        "version": "Blender 2.73",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.73/blender-2.73a-windows32.zip",
+        "version": "Blender 2.73a",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.73/blender-2.73a-windows64.zip",
+        "version": "Blender 2.73a",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.74/blender-2.74-windows32.zip",
+        "version": "Blender 2.74",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.74/blender-2.74-windows64.zip",
+        "version": "Blender 2.74",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.75/blender-2.75-windows32.zip",
+        "version": "Blender 2.75",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.75/blender-2.75-windows64.zip",
+        "version": "Blender 2.75",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.75/blender-2.75a-windows32.zip",
+        "version": "Blender 2.75a",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.75/blender-2.75a-windows64.zip",
+        "version": "Blender 2.75a",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.76/blender-2.76-windows32.zip",
+        "version": "Blender 2.76",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.76/blender-2.76-windows64.zip",
+        "version": "Blender 2.76",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.76/blender-2.76a-windows32.zip",
+        "version": "Blender 2.76a",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.76/blender-2.76a-windows64.zip",
+        "version": "Blender 2.76a",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.76/blender-2.76b-windows32.zip",
+        "version": "Blender 2.76b",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.76/blender-2.76b-windows64.zip",
+        "version": "Blender 2.76b",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.77/blender-2.77-windows32.zip",
+        "version": "Blender 2.77",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.77/blender-2.77-windows64.zip",
+        "version": "Blender 2.77",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.77/blender-2.77a-windows32.zip",
+        "version": "Blender 2.77a",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.77/blender-2.77a-windows64.zip",
+        "version": "Blender 2.77a",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.78/blender-2.78-windows32.zip",
+        "version": "Blender 2.78",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.78/blender-2.78-windows64.zip",
+        "version": "Blender 2.78",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.78/blender-2.78a-windows32.zip",
+        "version": "Blender 2.78a",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.78/blender-2.78a-windows64.zip",
+        "version": "Blender 2.78a",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.78/blender-2.78b-windows32.zip",
+        "version": "Blender 2.78b",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.78/blender-2.78b-windows64.zip",
+        "version": "Blender 2.78b",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.78/blender-2.78c-windows32.zip",
+        "version": "Blender 2.78c",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.78/blender-2.78c-windows64.zip",
+        "version": "Blender 2.78c",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.79/blender-2.79-windows32.zip",
+        "version": "Blender 2.79",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.79/blender-2.79-windows64.zip",
+        "version": "Blender 2.79",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.79/blender-2.79a-windows32.zip",
+        "version": "Blender 2.79a",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.79/blender-2.79a-windows64.zip",
+        "version": "Blender 2.79a",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.79/blender-2.79b-windows32.zip",
+        "version": "Blender 2.79b",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.79/blender-2.79b-windows64.zip",
+        "version": "Blender 2.79b",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.80/blender-2.80-windows32.zip",
+        "version": "Blender 2.80",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.80/blender-2.80-windows64.zip",
+        "version": "Blender 2.80",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.80/blender-2.80rc1-windows32.zip",
+        "version": "Blender 2.80rc1",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.80/blender-2.80rc1-windows64.zip",
+        "version": "Blender 2.80rc1",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.80/blender-2.80rc2-windows32.zip",
+        "version": "Blender 2.80rc2",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.80/blender-2.80rc2-windows64.zip",
+        "version": "Blender 2.80rc2",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.80/blender-2.80rc3-windows32.zip",
+        "version": "Blender 2.80rc3",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.80/blender-2.80rc3-windows64.zip",
+        "version": "Blender 2.80rc3",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.81/blender-2.81-windows64.zip",
+        "version": "Blender 2.81",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.81/blender-2.81a-windows64.zip",
+        "version": "Blender 2.81a",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.82/blender-2.82-windows64.zip",
+        "version": "Blender 2.82",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.82/blender-2.82a-windows64.zip",
+        "version": "Blender 2.82a",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.83/blender-2.83.0-windows64.zip",
+        "version": "Blender 2.83.0",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.83/blender-2.83.1-windows64.zip",
+        "version": "Blender 2.83.1",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.83/blender-2.83.10-windows64.zip",
+        "version": "Blender 2.83.10",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.83/blender-2.83.12-windows64.zip",
+        "version": "Blender 2.83.12",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.83/blender-2.83.13-windows64.zip",
+        "version": "Blender 2.83.13",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.83/blender-2.83.14-windows-x64.zip",
+        "version": "Blender 2.83.14",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.83/blender-2.83.15-windows-x64.zip",
+        "version": "Blender 2.83.15",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.83/blender-2.83.16-windows-x64.zip",
+        "version": "Blender 2.83.16",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.83/blender-2.83.17-windows-x64.zip",
+        "version": "Blender 2.83.17",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.83/blender-2.83.18-windows-x64.zip",
+        "version": "Blender 2.83.18",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.83/blender-2.83.19-windows-x64.zip",
+        "version": "Blender 2.83.19",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.83/blender-2.83.2-windows64.zip",
+        "version": "Blender 2.83.2",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.83/blender-2.83.20-windows-x64.zip",
+        "version": "Blender 2.83.20",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.83/blender-2.83.3-windows64.zip",
+        "version": "Blender 2.83.3",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.83/blender-2.83.4-windows64.zip",
+        "version": "Blender 2.83.4",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.83/blender-2.83.5-windows64.zip",
+        "version": "Blender 2.83.5",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.83/blender-2.83.6-windows64.zip",
+        "version": "Blender 2.83.6",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.83/blender-2.83.7-windows64.zip",
+        "version": "Blender 2.83.7",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.83/blender-2.83.8-windows64.zip",
+        "version": "Blender 2.83.8",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.83/blender-2.83.9-windows64.zip",
+        "version": "Blender 2.83.9",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.90/blender-2.90.0-windows64.zip",
+        "version": "Blender 2.90.0",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.90/blender-2.90.1-windows64.zip",
+        "version": "Blender 2.90.1",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.91/blender-2.91.0-windows64.zip",
+        "version": "Blender 2.91.0",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.91/blender-2.91.2-windows64.zip",
+        "version": "Blender 2.91.2",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.92/blender-2.92.0-windows64.zip",
+        "version": "Blender 2.92.0",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.93/blender-2.93.0-windows-x64.zip",
+        "version": "Blender 2.93.0",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.93/blender-2.93.1-windows-x64.zip",
+        "version": "Blender 2.93.1",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.93/blender-2.93.10-windows-x64.zip",
+        "version": "Blender 2.93.10",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.93/blender-2.93.11-windows-x64.zip",
+        "version": "Blender 2.93.11",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.93/blender-2.93.12-windows-x64.zip",
+        "version": "Blender 2.93.12",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.93/blender-2.93.13-windows-x64.zip",
+        "version": "Blender 2.93.13",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.93/blender-2.93.14-windows-x64.zip",
+        "version": "Blender 2.93.14",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.93/blender-2.93.15-windows-x64.zip",
+        "version": "Blender 2.93.15",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.93/blender-2.93.16-windows-x64.zip",
+        "version": "Blender 2.93.16",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.93/blender-2.93.17-windows-x64.zip",
+        "version": "Blender 2.93.17",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.93/blender-2.93.18-windows-x64.zip",
+        "version": "Blender 2.93.18",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.93/blender-2.93.2-windows-x64.zip",
+        "version": "Blender 2.93.2",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.93/blender-2.93.3-windows-x64.zip",
+        "version": "Blender 2.93.3",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.93/blender-2.93.4-windows-x64.zip",
+        "version": "Blender 2.93.4",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.93/blender-2.93.5-windows-x64.zip",
+        "version": "Blender 2.93.5",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.93/blender-2.93.6-windows-x64.zip",
+        "version": "Blender 2.93.6",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.93/blender-2.93.7-windows-x64.zip",
+        "version": "Blender 2.93.7",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.93/blender-2.93.8-windows-x64.zip",
+        "version": "Blender 2.93.8",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender2.93/blender-2.93.9-windows-x64.zip",
+        "version": "Blender 2.93.9",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender3.0/blender-3.0.0-windows-x64.zip",
+        "version": "Blender 3.0.0",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender3.0/blender-3.0.1-windows-x64.zip",
+        "version": "Blender 3.0.1",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender3.1/blender-3.1.0-windows-x64.zip",
+        "version": "Blender 3.1.0",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender3.1/blender-3.1.1-windows-x64.zip",
+        "version": "Blender 3.1.1",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender3.1/blender-3.1.2-windows-x64.zip",
+        "version": "Blender 3.1.2",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender3.2/blender-3.2.0-windows-x64.zip",
+        "version": "Blender 3.2.0",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender3.2/blender-3.2.1-windows-x64.zip",
+        "version": "Blender 3.2.1",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender3.2/blender-3.2.2-windows-x64.zip",
+        "version": "Blender 3.2.2",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender3.3/blender-3.3.0-windows-x64.zip",
+        "version": "Blender 3.3.0",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender3.3/blender-3.3.1-windows-x64.zip",
+        "version": "Blender 3.3.1",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender3.3/blender-3.3.10-windows-x64.zip",
+        "version": "Blender 3.3.10",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender3.3/blender-3.3.11-windows-x64.zip",
+        "version": "Blender 3.3.11",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender3.3/blender-3.3.12-windows-x64.zip",
+        "version": "Blender 3.3.12",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender3.3/blender-3.3.14-windows-x64.zip",
+        "version": "Blender 3.3.14",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender3.3/blender-3.3.15-windows-x64.zip",
+        "version": "Blender 3.3.15",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender3.3/blender-3.3.16-windows-x64.zip",
+        "version": "Blender 3.3.16",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender3.3/blender-3.3.17-windows-x64.zip",
+        "version": "Blender 3.3.17",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender3.3/blender-3.3.18-windows-x64.zip",
+        "version": "Blender 3.3.18",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender3.3/blender-3.3.19-windows-x64.zip",
+        "version": "Blender 3.3.19",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender3.3/blender-3.3.2-windows-x64.zip",
+        "version": "Blender 3.3.2",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender3.3/blender-3.3.20-windows-x64.zip",
+        "version": "Blender 3.3.20",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender3.3/blender-3.3.21-windows-x64.zip",
+        "version": "Blender 3.3.21",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender3.3/blender-3.3.3-windows-x64.zip",
+        "version": "Blender 3.3.3",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender3.3/blender-3.3.4-windows-x64.zip",
+        "version": "Blender 3.3.4",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender3.3/blender-3.3.5-windows-x64.zip",
+        "version": "Blender 3.3.5",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender3.3/blender-3.3.6-windows-x64.zip",
+        "version": "Blender 3.3.6",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender3.3/blender-3.3.7-windows-x64.zip",
+        "version": "Blender 3.3.7",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender3.3/blender-3.3.8-windows-x64.zip",
+        "version": "Blender 3.3.8",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender3.3/blender-3.3.9-windows-x64.zip",
+        "version": "Blender 3.3.9",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender3.4/blender-3.4.0-windows-x64.zip",
+        "version": "Blender 3.4.0",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender3.4/blender-3.4.1-windows-x64.zip",
+        "version": "Blender 3.4.1",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender3.5/blender-3.5.0-windows-x64.zip",
+        "version": "Blender 3.5.0",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender3.5/blender-3.5.1-windows-x64.zip",
+        "version": "Blender 3.5.1",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender3.6/blender-3.6.0-windows-x64.zip",
+        "version": "Blender 3.6.0",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender3.6/blender-3.6.1-windows-x64.zip",
+        "version": "Blender 3.6.1",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender3.6/blender-3.6.10-windows-x64.zip",
+        "version": "Blender 3.6.10",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender3.6/blender-3.6.11-windows-x64.zip",
+        "version": "Blender 3.6.11",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender3.6/blender-3.6.12-windows-x64.zip",
+        "version": "Blender 3.6.12",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender3.6/blender-3.6.13-windows-x64.zip",
+        "version": "Blender 3.6.13",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender3.6/blender-3.6.14-windows-x64.zip",
+        "version": "Blender 3.6.14",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender3.6/blender-3.6.2-windows-x64.zip",
+        "version": "Blender 3.6.2",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender3.6/blender-3.6.3-windows-x64.zip",
+        "version": "Blender 3.6.3",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender3.6/blender-3.6.4-windows-x64.zip",
+        "version": "Blender 3.6.4",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender3.6/blender-3.6.5-windows-x64.zip",
+        "version": "Blender 3.6.5",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender3.6/blender-3.6.7-windows-x64.zip",
+        "version": "Blender 3.6.7",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender3.6/blender-3.6.8-windows-x64.zip",
+        "version": "Blender 3.6.8",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender3.6/blender-3.6.9-windows-x64.zip",
+        "version": "Blender 3.6.9",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender4.0/blender-4.0.0-windows-x64.zip",
+        "version": "Blender 4.0.0",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender4.0/blender-4.0.1-windows-x64.zip",
+        "version": "Blender 4.0.1",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender4.0/blender-4.0.2-windows-x64.zip",
+        "version": "Blender 4.0.2",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender4.1/blender-4.1.0-windows-x64.zip",
+        "version": "Blender 4.1.0",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender4.1/blender-4.1.1-windows-x64.zip",
+        "version": "Blender 4.1.1",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    },
+    {
+        "link": "https://download.blender.org/release/Blender4.2/blender-4.2.0-windows-x64.zip",
+        "version": "Blender 4.2.0",
+        "arch": "x64",
+        "dateReleased": "02 Jun 23",
+        "variant": "release"
+    }
+]

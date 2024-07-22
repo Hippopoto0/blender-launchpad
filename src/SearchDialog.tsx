@@ -2,7 +2,7 @@ import { GrAdd } from "react-icons/gr"
 import { Button } from "./components/ui/button"
 import { Dialog, DialogClose, DialogContent, DialogFooter, DialogHeader, DialogTitle, DialogTrigger } from "./components/ui/dialog"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./components/ui/tabs"
-import { VersionsList, VersionsListBranch } from "./features/scraper/VersionsList"
+import { AllVersionsList, VersionsList, VersionsListBranch } from "./features/scraper/VersionsList"
 
 export default function SearchDialog() {
     return <Dialog>
@@ -22,13 +22,17 @@ export default function SearchDialog() {
           <Tabs defaultValue="daily" className="w-full">
             <TabsList className="items-start justify-start bg-slate-700">
               <TabsTrigger value="daily">Daily</TabsTrigger>
-              <TabsTrigger value="other">Other</TabsTrigger>
+              <TabsTrigger value="branch">Branch</TabsTrigger>
+              <TabsTrigger value="allReleases">All Releases</TabsTrigger>
             </TabsList>
             <TabsContent value="daily">
               <VersionsList/>
             </TabsContent>
-            <TabsContent value="other">
+            <TabsContent value="branch">
               <VersionsListBranch />
+            </TabsContent>
+            <TabsContent value="allReleases">
+              <AllVersionsList />
             </TabsContent>
           </Tabs>
 

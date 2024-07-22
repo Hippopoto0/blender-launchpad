@@ -94,6 +94,30 @@ async fn fetch_branch() -> String {
 
 }
 
+// returns [Blender 2.0, Blender 4.2] etc, can then be plugged back in to get links
+#[tauri::command]
+async fn fetch_all_builds_version() -> String {
+    let output = Command::new("python")
+        .arg("./src/all_version_scraper.py")
+        .output()
+        .expect("Failed to execute script");
+    // println!("{}", String::from_utf8_lossy(&output.stdout));
+
+    format!("{}", String::from_utf8_lossy(&output.stdout))
+}
+
+#[tauri::command]
+async fn fetch_all_builds_on_page(version: String) -> String {
+    let output = Command::new("python")
+        .arg("./src/all_version_scraper.py")
+        .arg(version)
+        .output()
+        .expect("Failed to execute script");
+    println!("{}", String::from_utf8_lossy(&output.stdout));
+
+    format!("{}", String::from_utf8_lossy(&output.stdout))
+}
+
 #[tauri::command]
 async fn find_instances() -> String {
     let output = Command::new("python")
@@ -128,7 +152,7 @@ async fn delete_instance(path: String) -> String {
 
 fn main() {
     tauri::Builder::default()
-        .invoke_handler(tauri::generate_handler![greet, run_downloader, fetch_daily, find_instances, launch_instance, delete_instance, fetch_branch])
+        .invoke_handler(tauri::generate_handler![greet, run_downloader, fetch_daily, find_instances, launch_instance, delete_instance, fetch_branch, fetch_all_builds_version, fetch_all_builds_on_page])
         // .invoke_handler(tauri::generate_handler![run_downloader])
         // .invoke_handler(tauri::generate_handler![fetch_daily])
         .run(tauri::generate_context!())

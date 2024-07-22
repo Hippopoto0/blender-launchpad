@@ -6,7 +6,7 @@ import "./index.css"
 import { appWindow } from '@tauri-apps/api/window'
 
 import { startMessageListener } from "./messaging/MessageHandler";
-import { fetchBranchBuilds, fetchDailyBuilds, VersionsListBranch, VersionsList } from "./features/scraper/VersionsList";
+import { fetchBranchBuilds, fetchDailyBuilds, VersionsListBranch, VersionsList, fetchAllBuilds } from "./features/scraper/VersionsList";
 import { BlenderInstance, fetchDownloadedInstances, useInstancesStore } from "./features/instances/InstanceManager";
 import InstanceThumbnail from "./features/thumbnails/InstanceThumbnail";
 import DownloadingThumbnailList from "./features/thumbnails/DownloadThumbnailList";
@@ -32,6 +32,7 @@ function App() {
     fetchDownloadedInstances()
     fetchDailyBuilds()
     fetchBranchBuilds()
+    fetchAllBuilds()
 
     if (typeof document === 'undefined') return
     document
