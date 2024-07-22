@@ -22,7 +22,9 @@ import {
 
 function renderVariantText(instance: BlenderInstance) {
     if (instance.variant == "stable") {
-        return <p className="absolute font-bold text-sm right-2 bottom-2 text-green-400">Stable</p>
+        return <p className="absolute font-bold text-sm right-2 bottom-2 text-purple-400">Stable</p>
+    } else if (instance.variant == "release") {
+        return <p className="absolute font-bold text-sm right-2 bottom-2 text-green-400">Release</p>
     } else if (instance.variant == "alpha") {
         return <p className="absolute font-bold text-sm right-2 bottom-2 text-red-400">Alpha</p>
     } else if (instance.variant == "candidate") {

@@ -17,7 +17,11 @@ if len(sys.argv) > 1:
         downloaded_name = url_to_download.split("daily/")[1].split(".zip")[0]
     elif "experimental/" in url_to_download:
         downloaded_name = url_to_download.split("experimental/")[1].split(".zip")[0]
+    else:
+        # if in all prev versions
+        downloaded_name = url_to_download.split("/")[3].split(".zip")[0]
     save_path = (sys.argv[1] + f"current\\{downloaded_name}.zip").replace("\\", "/")
+    
 
     extract_path = sys.argv[1] + "/instances/"
 else:
