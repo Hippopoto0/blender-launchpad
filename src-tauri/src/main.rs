@@ -119,6 +119,17 @@ async fn fetch_all_builds_on_page(version: String) -> String {
 }
 
 #[tauri::command]
+async fn fetch_all_builds_from_local() -> String {
+    let output = Command::new("python")
+        .arg("./src/all_versions_from_local.py")
+        .output()
+        .expect("Failed to execute script");
+
+    println!("{}", String::from_utf8_lossy(&output.stdout));
+    format!("{}", String::from_utf8_lossy(&output.stdout))
+}
+
+#[tauri::command]
 async fn find_instances() -> String {
     let output = Command::new("python")
         .arg("./src/fetch_downloaded.py")
@@ -152,7 +163,7 @@ async fn delete_instance(path: String) -> String {
 
 fn main() {
     tauri::Builder::default()
-        .invoke_handler(tauri::generate_handler![greet, run_downloader, fetch_daily, find_instances, launch_instance, delete_instance, fetch_branch, fetch_all_builds_version, fetch_all_builds_on_page])
+        .invoke_handler(tauri::generate_handler![greet, run_downloader, fetch_daily, find_instances, launch_instance, delete_instance, fetch_branch, fetch_all_builds_version, fetch_all_builds_on_page, fetch_all_builds_from_local])
         // .invoke_handler(tauri::generate_handler![run_downloader])
         // .invoke_handler(tauri::generate_handler![fetch_daily])
         .run(tauri::generate_context!())

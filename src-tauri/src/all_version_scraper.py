@@ -4,7 +4,6 @@ import re
 import sys
 import json
 
-
 if len(sys.argv) == 1:
     soup = BeautifulSoup(requests.get("https://download.blender.org/release/").content, "html.parser")
     all_links = soup.select("a")

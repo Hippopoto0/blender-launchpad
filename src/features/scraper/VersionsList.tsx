@@ -98,6 +98,16 @@ export async function fetchAllBuilds() {
 
 }
 
+export async function fetchAllBuildsFromLocal() {
+    let allBuilds: string = await invoke("fetch_all_builds_from_local")
+    
+    console.log(allBuilds)
+    let allBuildsAsReleaseType: BlenderRelease[] = (JSON.parse(allBuilds)) as BlenderRelease[]
+    
+
+    useAllVersionsStore.setState({ releases: allBuildsAsReleaseType })
+}
+
 export function VersionsList() {
     const releases = useDailyVersionsStore((state) => state.releases)
 
