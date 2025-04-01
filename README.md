@@ -1,7 +1,14 @@
-# Tauri + React + Typescript
 
-This template should help get you started developing with Tauri, React and Typescript in Vite.
+# Blender Version Manager built using Tauri
 
-## Recommended IDE Setup
+React for Frontend, Mix of Python and Rust for backend, with communication done by piping.
 
-- [VS Code](https://code.visualstudio.com/) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
+Clone and run with `tauri run dev`, make sure tauri is installed.
+
+## Base window (downloading)
+
+![base window, downloading](./assets/20250401_183811_blender_launchpad_downloading.jpg)
+
+## Get instance dialog
+
+![add instance dialog](assets/20250401_183950_blend_launchpad_adding_instance.jpg)
